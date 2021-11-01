@@ -9,6 +9,7 @@ For details, see: https://docs.python.org/3/library/logging.html
 """
 import logging
 
+
 def logging_test(logger):
     """Log messages using each of the standard logging levels 
        plus 1 custom log level.
@@ -23,8 +24,13 @@ def logging_test(logger):
     # level = logging.WARN + 5 (custom log level between WARN and ERROR)
     # error
     # critical or fatal
+    logger.debug("a message for debugging.")
+    logger.info("this is a info message")
+    logger.warning("a warning message")
     level = logging.WARN + 5  # custom log level
-    print("You forgot to write logging_test")
+    logger.error("An error occurred.")
+    logger.critical("A critical error or failure")
+    logger.log(level, "custom log level message")
 
 
 def simple_config():
@@ -61,11 +67,11 @@ if __name__ == "__main__":
     # TODO Configure logging using one of these choices:
 
     # 1. Call basicConfig with the default settings
-    logging.basicConfig()
+    # logging.basicConfig()
 
     # 2. Call simple_config to set the format of log messages.
     #    Comment out the above call (#1) to basicConfig for this.
-    # simple_config()
+    simple_config()
 
     # 3. my_config() write your own logging configuration as
     #    described in the assignment. 
