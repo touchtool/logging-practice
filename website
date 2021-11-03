@@ -1,0 +1,10 @@
+2021-11-03 15:54:48,767 root WARNING: a warning message
+2021-11-03 15:54:48,767 root ERROR: An error occurred.
+2021-11-03 15:54:48,767 root CRITICAL: A critical error or failure
+2021-11-03 15:54:48,767 root Level 35: custom log level message
+2021-11-03 15:54:48,767 fake DEBUG: a message for debugging.
+2021-11-03 15:54:48,767 fake INFO: this is a info message
+2021-11-03 15:54:48,768 fake WARNING: a warning message
+2021-11-03 15:54:48,768 fake ERROR: An error occurred.
+2021-11-03 15:54:48,768 fake CRITICAL: A critical error or failure
+2021-11-03 15:54:48,768 fake Level 35: custom log level message
